@@ -245,4 +245,93 @@ font-size: 14px;
     padding: 10px 0;
     margin:0;
     font-weight: bold;
+}@media  (max-width: 768px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+
+  } #userfoto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* user ao lado da logo */
+  .user {
+    margin: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* imagem do usuário */
+  .user img {
+    width: 55px;
+    margin: 0;
+  }
+
+  /* texto */
+  .user h1 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  .user div {
+    margin: 0;
+    width: auto;
+    gap: 12px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .banner h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobrenos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  #tec {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+
+  .sobrenostexto {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .sobrenostexto h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }@media(max-width: 425px) {
+ body{
+    background-color: red;
+ }
 }
