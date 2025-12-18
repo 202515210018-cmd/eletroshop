@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Login</h1>
+
+    <form id="loginForm" class="log"6>
+        
+        <label>username</label>
+        <p>digite seu usuário.</p>
+        <input type="text" required>
+
+        <label>senha</label>
+        <p>mínimo 8 caracteres, 1 número e 1 letra maiúscula.</p>
+        <input 
+            type="password"
+            required
+            minlength="8"
+            pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+        >
+
+        <span class="erro">
+            Senha inválida. Use 8 caracteres, 1 número e 1 letra maiúscula.
+        </span>
+
+        <a href="#" class="senhaesquecida">esqueceu sua senha?</a>
+
+        <button type="submit">LOGIN</button>
+
+        <div class="successo" id="sucessomsg">
+            Login realizado com sucesso!
+        </div>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

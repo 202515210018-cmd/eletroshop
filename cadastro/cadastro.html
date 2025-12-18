@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Cadastre-se!</h1>
+
+    <form id="Cadastro" class="cad">
+
+        <label>e-mail</label>
+        <p>digite seu e-mail</p>
+        <input type="email" required>
+
+        <label>senha</label>
+        <p>digite sua senha com no mínimo oito caracteres.</p>
+        <input 
+            type="password"
+            required
+            minlength="8"
+            pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+        >
+
+        <span class="erro">
+            A senha deve conter no mínimo 8 caracteres, uma letra maiúscula e um número.
+        </span>
+
+        <button type="submit">CADASTRO</button>
+
+        <div class="sucesso">
+            Cadastro realizado com sucesso!
+        </div>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

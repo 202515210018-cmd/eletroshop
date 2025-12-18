@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>EletronShop - Loja de Eletrônicos</title>
     <link rel="stylesheet" href="projeto.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
@@ -13,12 +14,15 @@
 </head>
 <body>
     <header>
-
+        <div class="topo">
         <div class="logo">
         <a href="file:///C:/Users/geoga/Downloads/HTML/principal/index.html">
         <img src="./topo/logotipo.png" alt="Logo Shopen">
         </a>
+
         </div>
+        <div class="menu" onclick="toggleMenu()">☰ Menu</div>
+    </div>
         <nav>
             <input type="text">
             <ul>
@@ -32,8 +36,8 @@
             </div>
 
         <div class="user">
-            <img src ="./topo/usuario.png">
-            <h1><span><a href="#">Entre</a></span> ou <span><br><a href="#">Cadastra-se</a></b></span> </h1>
+            <img id="userfoto" src ="./topo/usuario.png">
+            <h1><span><a href="login/login.html">Entre</a></span> ou <span><br><a href="cadastro/cadastro.html">Cadastra-se</a></b></span> </h1>
         <div>
            <img src="./topo/carrinho.png">
             <img src="./topo/atender.png">
@@ -125,6 +129,18 @@
 </div>
     </footer>
      <p id="cnpj">cnpj:12.345.678/0001-95</p>
+
+     <script>
+  function toggleMenu() {
+    const menu = document.querySelector("nav ul");
+    if (menu.style.display === "flex") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "flex";
+    }
+  }
+</script>
     
 </body>
 </html>
+
